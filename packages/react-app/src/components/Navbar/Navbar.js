@@ -1,6 +1,5 @@
 import React from 'react'
 import { useState } from "react";
-import {Link} from 'react-router-dom';
 import logo from '../../logo.png'
 import "./Navbar.css";
 
@@ -50,7 +49,7 @@ const Navbar = () => {
                 </Link> */}
             </ul>
 
-            <button className='mobile-menu-icon' onClick={()=> setIsMobile(!isMobile)}>
+            <button className='mobile-menu-icon' onClick={()=> {setIsMobile(!isMobile)} }>
                 {isMobile ? <i className='fas fa-times'></i> : <i className='fas fa-bars'></i> }
             </button>
 

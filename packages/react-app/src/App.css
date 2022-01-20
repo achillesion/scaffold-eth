@@ -7,6 +7,68 @@
 
 }
 
+
+@media screen and (max-width:780px) {
+    .log{
+        display: flex;
+        position: absolute;
+        top: 15px;
+        left: 35px;
+
+    }
+
+    .nav-links{
+        display: none ;
+    }
+
+    ul > li{
+        padding: 20px;
+    }
+
+    .nav-links-mobile{
+        position: absolute;
+        display: block;
+        list-style: none;
+        background-color: aliceblue;
+        left: 0;
+        top: 75px;
+        transition: all 0.5s ease-out;
+        width: 100%;
+        padding: 50px;
+        top:30px;
+    }
+    .home,
+    .skills,
+    .contact,
+    .signup,
+    .about{
+        color: #d0c309;
+        text-align: center;
+        padding: 32px;
+        width: 100%;
+        transition: all 0.5s ease-out;
+    }
+
+    .mobile-menu-icon{
+        display: block;
+        position: absolute;
+        font-size: 30px;
+        color: white;
+        background-color: #1862f7;
+        border: none;
+        outline: none;
+        top: 40px;
+        right: 25px;
+    }
+
+    #btn-box{
+        margin-right:70px;
+        margin-top: 10px;
+    }
+    
+}
+
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
