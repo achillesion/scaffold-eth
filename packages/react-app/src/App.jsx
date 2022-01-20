@@ -267,8 +267,8 @@ function App(props) {
       <ThemeSwitch />
 
       {/* 👨‍💼 Your account is in the top right with a wallet at connect options */}
-      <div style={{ position: "fixed", textAlign: "right", right: 0, top: 10, padding: 10}}>
-        <div style={{ display: "flex", flex: 1, alignItems: "center" }} id="btn-box">
+      <div style={{ position: "fixed", textAlign: "right", right: 0, top: 20, padding: 10}} id="btn-box">
+        <div style={{ display: "flex", flex: 1, alignItems: "center" }} >
         {USE_NETWORK_SELECTOR && (
             <div style={{ marginRight: 20 }}>
               <NetworkSwitch
@@ -291,9 +291,7 @@ function App(props) {
             blockExplorer={blockExplorer}
           />
         </div>
-        {yourLocalBalance.lte(ethers.BigNumber.from("0")) && (
-          <FaucetHint localProvider={localProvider} targetNetwork={targetNetwork} address={address} />
-        )}
+        {yourLocalBalance.lte(ethers.BigNumber.from("0"))}
         </div>
       </div>
   );
